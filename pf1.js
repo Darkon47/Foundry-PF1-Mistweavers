@@ -28966,7 +28966,7 @@ const shouldAddReachSquare = function (
 
   const dist = measureReachDistance(p0, p1);
   const dist2 = measureReachDistance(p0, p1, true);
-  const reachRuleRange = convertDistance(10)[0];
+  const reachRuleRange = convertDistance(5)[0];
   if (dist > range) {
     // Special rule for 10-ft. reach
     if (!(options.useReachRule && range === reachRuleRange)) {
@@ -28991,19 +28991,7 @@ const measureReachDistance = function (p0, p1, alt = false) {
     ray = new Ray(p0, p1),
     nx = Math.abs(Math.ceil(ray.dx / gs)),
     ny = Math.abs(Math.ceil(ray.dy / gs));
-
-  // Get the number of straight and diagonal moves
-  const nDiagonal = Math.min(nx, ny),
-    nStraight = Math.abs(ny - nx);
-
-  // Return distance
-  if (!alt) {
-    const nd10 = Math.floor(nDiagonal / 2);
-    const spaces = nd10 * 2 + (nDiagonal - nd10) + nStraight;
-    return spaces * canvas.dimensions.distance;
-  }
-
-  return (nStraight + nDiagonal) * canvas.scene.data.gridDistance;
+	return (nx + ny) * canvas.scene.data.gridDistance;
 };
 
 class TokenQuickActions {
