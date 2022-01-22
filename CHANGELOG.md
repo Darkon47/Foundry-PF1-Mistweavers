@@ -1,5 +1,98 @@
 # Changelog
 
+## 0.80.7 - 2022-1-17
+
+### Bug Fixes
+
+- Prototype token was missing system specific vision settings. ([1224](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1224))
+- Give item dialog could not be scrolled. ([1195](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1195))
+- Experience points were incorrectly tracked as a string, causing issues
+- Wound penalties were applying twice to initiative ([1231](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1231))
+- Melee/ranged attacks on combat tab ignored wound threshold for display ([1230](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1230))
+- Weapon attacks only had a full attack option on their use dialogs ([1228](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1228))
+- Fix attack bonus display on attack roll dialogs for formulaic attacks ([1229](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1229))
+- Fix error when setting shared.reject in item script with measure template ([1227](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1227))
+- Spontaneous spellbooks didn't make use of domain spells ([1193](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1193))
+
+### Compendium
+
+- Fix firearm weapon data ([1203](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1203))
+
+## 0.80.6 - 2022-1-16
+
+### Bug Fixes
+
+- Updating unlinked tokens caused errors ([1223](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1223))
+
+## 0.80.5 - 2022-1-16
+
+### Bug Fixes
+
+- Queued updates would run on all users who own the actor. ([1109](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1109))
+- Default token settings caused an error and failed to provide system specific settings. ([1209](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1209))
+- DSN was not shown for other users with attacks. ([1206](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1206))
+- @powerAttackPenalty was no longer in attack roll data.
+- Some chat messages did not respect current roll mode if no forcing was used.
+- Power Attack for natural attacks was only adding 1 damage per step
+- Negative charge costs work again ([1218](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1218))
+- Secondary natural attacks weren't applying an attack penalty ([1207](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1207))
+- Fix bar attributes not showing up in token configurations ([1](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1))
+
+### Changelog
+
+- Inline roll turning into raw strings is now optional.
+- Allow giving items to all other players while a GM is connected
+- Change name property on player clients for unidentified items, allowing for better operability with modules
+- Charged actions are now proper actions ([810](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/810))
+- Allow multiselect with shift on chat card targets ([1212](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1212))
+
+### Compendium
+
+- Changed Brawler's AC bonus to use a formula instead of a script
+
+### API
+
+- Remove unused ActorPF.useSpell ([1221](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1221))
+- Created a class for attack dialogs
+- Make game.pf1.ItemAttack actually moddable ([1220](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1220))
+
+## 0.80.4 - 2022-1-8
+
+### Bug Fixes
+
+- Fix chat cards getting an incorrect ID for its measure template
+- Help browser was nonfunctional with routePrefix. ([1144](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1144))
+- Item gifting was silently failing. ([1190](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1190))
+- Buff icons broken with hide from token in token HUD condition menu.
+- Non-formulaic extra attacks did not apply their modifiers to attacks. ([1200](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1200))
+
+### Changelog
+
+- Chat cards with measure templates now have all tokens within as targets
+- Add saving throws to chat card targets
+
+## 0.80.3 - 2022-1-6
+
+### Bug Fixes
+
+- Attacks with ammo links couldn't be used. ([1187](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1187))
+- Fix item images not rendering in actor sheet with some special characters in the file name. ([1197](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1197))
+- Actor-specific tooltip settings didn't load correctly ([1189](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1189))
+- Unidentified items used from an owned actor showed their identified name and description in the chat card ([1175](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1175))
+- Fix light with negative luminosity being affected by low-light vision
+- Fix vision permission not working ([1186](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1186))
+- Grappled condition was adding penalties to CMB twice ([1191](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1191))
+
+### Changelog
+
+- Added @dc to item roll data. ([1183](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1183))
+- Add `shared.reject` to item use script calls ([1182](https://gitlab.com/Furyspark/foundryvtt-pathfinder1/-/issues/1182))
+
+### API
+
+- Add MeasureTemplatePF.getTokensWithin and MeasureTemplatePF.getHighlightedSquares functions
+- Roll JSON is no longer created pre-emptively for useAttack (including associated useItem hooks).
+
 ## 0.80.2 - 2021-12-21
 
 ### Bug Fixes
