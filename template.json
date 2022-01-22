@@ -129,6 +129,8 @@
               "maneuverability": "average"
             }
           },
+		  "wxp": {},
+		  "wxpRate":{},
           "conditions": {},
           "spells": {
             "spellbooks": {

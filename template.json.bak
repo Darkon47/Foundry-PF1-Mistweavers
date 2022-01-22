@@ -91,18 +91,21 @@
             "value": 0,
             "base": 0,
             "temp": 0,
-            "nonlethal": 0
+            "nonlethal": 0,
+            "max": 0
           },
           "wounds": {
             "min": 0,
             "base": 0,
-            "value": 0
+            "value": 0,
+            "max": 0
           },
           "vigor": {
             "min": 0,
             "value": 0,
             "temp": 0,
-            "base": 0
+            "base": 0,
+            "max": 0
           },
           "init": {
             "value": 0,
@@ -126,69 +129,173 @@
               "maneuverability": "average"
             }
           },
-          "wxp": {
-			  "slash": 0,
-			  "stab": 0,
-			  "smash": 0,
-			  "bow": 0,
-			  "gun": 0,
-			  "hiden": 0,
-			  "fire": 0,
-			  "air": 0,
-			  "water": 0,
-			  "earth": 0,
-			  "force": 0,
-			  "sonic": 0,
-			  "positive": 0,
-			  "negative": 0,
-			  "sacred": 0,
-			  "axiomatic": 0,
-			  "anarchic": 0,
-			  "profane": 0,
-			  "ultraLight": 0,
-			  "light": 0,
-			  "medium": 0,
-			  "heavy": 0,
-			  "superHeavy": 0,
-			  "buckler": 0,
-			  "targe": 0,
-			  "heater": 0,
-			  "kite": 0,
-			  "tower": 0
-		  },
-          "wxpRate": {
-			  "slash": 1,
-			  "stab": 1,
-			  "smash": 1,
-			  "bow": 1,
-			  "gun": 1,
-			  "hiden": 1,
-			  "fire": 1,
-			  "air": 1,
-			  "water": 1,
-			  "earth": 1,
-			  "force": 1,
-			  "sonic": 1,
-			  "positive": 1,
-			  "negative": 1,
-			  "sacred": 1,
-			  "axiomatic": 1,
-			  "anarchic": 1,
-			  "profane": 1,
-			  "ultraLight": 1,
-			  "light": 1,
-			  "medium": 1,
-			  "heavy": 1,
-			  "superHeavy": 1,
-			  "buckler": 1,
-			  "targe": 1,
-			  "heater": 1,
-			  "kite": 1,
-			  "tower": 1
-		  },
+<<<<<<< HEAD
+=======
+          "Exp": {
+            "weap": {
+				"melee":{
+					"slash":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"stab":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"smash":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					}
+				},
+				"ranged":{
+					"gun":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"bow":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"hidden":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					}
+				},
+				"magic":{
+					"lower":{
+						"water":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"air":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"fire":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"earth":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						}
+					},
+					"higher":{
+						"force":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"sonic":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"positive":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"negative":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						}
+					},
+					"moral":{
+						"axiomatic":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"sacred":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"anarchic":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						},
+						"profane":{
+							"value":0,
+							"next":50,
+							"rank":"E"
+						}
+					}
+				}
+            },
+            "armor": {
+				"armor":{
+					"ultralight":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"light":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"medium":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"heavy":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"superheavy":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					}
+				},
+				"shield":{
+					"buckler":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"light":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"medium":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"heavy":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					},
+					"tower":{
+						"value":0,
+						"next":50,
+						"rank":"E"
+					}
+				}
+            }
+          },
+>>>>>>> parent of 5aa0320 (Weapon XP)
           "conditions": {},
           "spells": {
-            "usedSpellbooks": [],
             "spellbooks": {
               "primary": {
                 "altName": "",
@@ -782,7 +889,8 @@
       "templates": ["common"],
       "details": {
         "xp": {
-          "value": 0
+          "value": 0,
+          "max": 0
         },
         "height": "",
         "weight": "",
@@ -883,8 +991,7 @@
           "activation": {
             "cost": 1,
             "type": ""
-          },  
-		"XPTypes":[]
+          }
         },
         "duration": {
           "value": null,
